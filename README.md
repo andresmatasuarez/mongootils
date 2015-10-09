@@ -1,4 +1,6 @@
 # mongootils
+[![Build Status](https://travis-ci.org/andresmatasuarez/mongootils.svg?branch=master)](https://travis-ci.org/andresmatasuarez/mongootils)
+
 Promisified connection utils for Mongoose
 
 ## Requirements
