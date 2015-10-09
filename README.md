@@ -63,7 +63,7 @@ Returns a Bluebird promise that is resolved when the connection has been effecti
 ### db.is()
 Checks for the underlying connection [state](http://mongoosejs.com/docs/api.html#connection_Connection-readyState).
 ```javascript
-if (db.is('connecting') || db.is('connecting')) {
+if (db.is('connecting') || db.is('connected')) {
   // Listen to Thin Lizzy
 } else {
   // ... or listen to Thin Lizzy
@@ -79,3 +79,8 @@ Returns the `mongoose`-valid connection URI for the underlying connection.
   var db = new Mongootils('mongodb://localhost:27000,127.0.0.1:27001/my_db');
   console.log(db.getConnectionURI()); // prints 'mongodb://localhost:27000/my_db,mongodb://127.0.0.1:27001/my_db'
 ```
+
+## Contributions
+1. Code feature
+2. Write tests
+3. Pull Request
