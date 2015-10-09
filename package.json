@@ -1,0 +1,38 @@
+{
+  "name": "mongootils",
+  "version": "0.0.0",
+  "description": "Promisified connection utils for Mongoose",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha tests"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andresmatasuarez/mongootils.git"
+  },
+  "keywords": [
+    "mongoose",
+    "mongo",
+    "db",
+    "connection",
+    "utils"
+  ],
+  "author": "Andrés Mata Suárez <amatasuarez@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/andresmatasuarez/mongootils/issues"
+  },
+  "homepage": "https://github.com/andresmatasuarez/mongootils#readme",
+  "dependencies": {
+    "bluebird": "^2.10.2",
+    "debug": "^2.2.0",
+    "mongodb-uri": "^0.9.7"
+  },
+  "peerDependencies": {
+    "mongoose": "*"
+  },
+  "devDependencies": {
+    "chai": "^3.3.0",
+    "mocha": "^2.3.3"
+  }
+}
