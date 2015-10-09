@@ -63,8 +63,6 @@ var mongodburi = require('mongodb-uri');
 
 var d = debug('mongootils');
 
-
-
 /**
  * @constructor
  *
