@@ -1,7 +1,7 @@
 # mongootils
 [![Build Status](https://travis-ci.org/andresmatasuarez/mongootils.svg?branch=master)](https://travis-ci.org/andresmatasuarez/mongootils)
 
-Promisified connection utils for Mongoose
+Promisified ([Bluebird](https://github.com/petkaantonov/bluebird)) connection utils for Mongoose
 
 ## Requirements
 `mongootils` requires [Mongoose](http://mongoosejs.com/) as a peer dependency, so make sure you have it installed in your project.
