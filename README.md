@@ -82,6 +82,10 @@ Returns the `mongoose`-valid connection URI for the underlying connection.
   console.log(db.getConnectionURI()); // prints 'mongodb://localhost:27000/my_db,mongodb://127.0.0.1:27001/my_db'
 ```
 
+## TODO
+1. Test multiple connections to the same database with two different Mongootils object
+2. Test multiple database URI
+
 ## Contributions
 1. Code feature
 2. Write tests
