@@ -3,6 +3,9 @@
   "version": "0.0.1",
   "description": "Promisified connection utils for Mongoose",
   "main": "index.js",
+  "engines": {
+    "node": "4.2.1"
+  },
   "scripts": {
     "test": "mocha tests"
   },
