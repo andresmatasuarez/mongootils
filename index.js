@@ -185,7 +185,15 @@ Mongootils.prototype.connect = function(){
     } else {
       d(DEBUG_CONNECTING, this.uri);
 
-      this.connection = mongoose.createConnection(this.uri, this.options);
+      // If there is only one connection in connections array then it is the default one
+      // and must be handled differently. If it is disconnected (readyState = 0), then connect to it
+      // using 'mongoose.connect'. Otherwise, create a new connection with 'mongoose.createConnection'.
+      if (mongoose.connections.length === 1 && mongoose.connections[0].readyState === 0){
+        mongoose.connect(this.uri, this.options);
+        this.connection = mongoose.connections[0];
+      } else {
+        this.connection = mongoose.createConnection(this.uri, this.options);
+      }
 
       this.addConnectionListener('error', onConnectionError);
       this.addConnectionListener('open', onConnectionOpened);
