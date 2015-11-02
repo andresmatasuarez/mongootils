@@ -1,6 +1,6 @@
 {
   "name": "mongootils",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Promisified connection utils for Mongoose",
   "main": "index.js",
   "engines": {
